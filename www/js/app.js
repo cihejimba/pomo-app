@@ -1,7 +1,10 @@
 (function() {
   'use strict'
 
-  angular.module('pomo', ['ionic'])
+  angular.module('pomo', [
+    'ionic',
+    'ngMaterial'
+  ])
 
   .run(function($ionicPlatform) {
     $ionicPlatform.ready(function() {

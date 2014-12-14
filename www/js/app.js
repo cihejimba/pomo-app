@@ -19,11 +19,38 @@
 
   .config(function($stateProvider, $urlRouterProvider) {
     $stateProvider
-      .state('index', {
-        url: '/index',
-        templateUrl: 'templates/app.html',
-        controller: 'appCtrl'
+      .state('tab', {
+        url: '/tab',
+        abstract: true,
+        templateUrl: 'templates/tabs.html'
+      })
+      .state('tab.timer', {
+        url: '/timer',
+        views: {
+          'timer': {
+            templateUrl: 'templates/timer.html',
+            controller: 'TimerCtrl'
+          }
+        }
+      })
+      .state('tab.logs', {
+        url: '/logs',
+        views: {
+        'logs': {
+          templateUrl: 'templates/logs.html',
+          controller: 'LogsCtrl'
+          }
+        }
+      })
+      .state('tab.reports', {
+        url: '/reports',
+        views: {
+          'reports': {
+            templateUrl: 'templates/reports.html',
+            controller: 'ReportsCtrl'
+          }
+        }
       });
-    $urlRouterProvider.otherwise('index');
+    $urlRouterProvider.otherwise('/tab/timer');
   });
 })();

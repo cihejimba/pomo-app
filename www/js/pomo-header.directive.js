@@ -6,8 +6,10 @@
         restrict: 'E',
         replace: true,
         templateUrl: 'templates/pomo-header.html',
-        controller: ['$scope', function($scope) {
-          
+        controller: ['$scope', function($scope) { 
+          $scope.tabSelected = function(tab) {
+            console.log(tab);
+          }         
         }]
       }
     })

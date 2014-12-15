@@ -17,11 +17,10 @@ $dark:                            #444 !default;
 
 // theme colors
 $siteRed: rgb(191, 64, 64);
-
+$siteGreen: #4caf50;
 // text colors
 $textDark: #333;
 $textLight: #777;
-
 
 // The path for our ionicons font files, relative to the built CSS in www/css
 $ionicons-font-path: "../lib/ionic/fonts" !default;
@@ -30,3 +29,11 @@ $ionicons-font-path: "../lib/ionic/fonts" !default;
 @import "www/lib/ionic/scss/ionic";
 @import "scss/_pomo-header.scss";
 @import "scss/_pomo-timer.scss";
+
+#md-tabs,
+.md-tabs-content {
+  height: 100%;
+}
+
+.md-header {
+}

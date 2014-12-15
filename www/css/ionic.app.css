@@ -7816,15 +7816,25 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   transition: none !important; }
 
 #pomo-header {
-  height: 56px;
-  background-color: #bf4040;
+  height: 48px;
+  background-color: #4caf50;
   color: #FFF;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0px 40px; }
+  padding: 0px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
   #pomo-header > div {
     font-size: 20px; }
+  #pomo-header #pomo-title {
+    color: #FFF;
+    font-weight: 700; }
+
+#pomo-timer-template {
+  width: 100%;
+  height: 100%; }
 
 #pomo-timer {
   display: flex;
@@ -7836,3 +7846,7 @@ $ios-transition-box-shadow-end: -200px 0px 200px rgba(0,0,0,0.15), -5px 0px 5px 
   #pomo-timer #progress-indicator {
     height: 100%;
     width: 100%; }
+
+#md-tabs, .md-tabs-content {
+  height: 100%; }
+

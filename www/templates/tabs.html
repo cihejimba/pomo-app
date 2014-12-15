@@ -1,14 +1,14 @@
-<ion-tabs class="tabs-icon-top tabs-color-active-positive">
-  <!-- Timer Tab -->
-  <ion-tab title="Timer" icon-on="ion-ios-timer" icon-off="ion-ios-timer-outline" href="#/tab/timer">
-    <ion-nav-view name="timer"></ion-nav-view>
-  </ion-tab>
-  <!-- Logs Tab -->
-  <ion-tab title="Logs" icon="icon ion-heart" href="#/tab/logs">
-    <ion-nav-view name="logs"></ion-nav-view>
-  </ion-tab>
-  <!-- Reports Tab -->
-  <ion-tab title="Reports" icon="icon ion-gear-b" href="#/tab/reports">
-    <ion-nav-view name="reports"></ion-nav-view>
-  </ion-tab>
-</ion-tabs>
+<ion-pane>
+  <pomo-header></pomo-header>
+  <md-tabs id="md-tabs" md-selected="selectedIndex">
+    <md-tab label="Timer">
+      <pomo-timer></pomo-timer>
+    </md-tab>
+    <md-tab label="Logs">
+      <pomo-logs></pomo-logs>
+    </md-tab>
+    <md-tab label="Report">
+      <pomo-reports></pomo-reports>
+    </md-tab>
+  </md-tabs>
+</ion-pane>

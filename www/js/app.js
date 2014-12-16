@@ -3,7 +3,8 @@
 
   angular.module('pomo', [
     'ionic',
-    'ngMaterial'
+    'ngMaterial',
+    'angular-progress-arc'
   ])
 
   .run(function($ionicPlatform) {

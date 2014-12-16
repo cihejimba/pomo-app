@@ -1,5 +1,18 @@
 <div id="pomo-timer-template">
-  <div id="pomo-timer">
-    <md-progress-circular id="progress-indicator" md-mode="determinate" diameter="300" value="{{percentComplete}}"></md-progress-circular>
+  <div id="pomo-timer" ng-show="timing">
+    <progress-arc
+      size="225"
+      background="#C8E6C9"
+      stroke="#4caf50"
+      stroke-width="20"
+      counter-clockwise="true"
+      complete="percentComplete">
+    </progress-arc>
+  </div>
+  <div id="pomo-prompt" ng-show="prompt">
+    <span>{{pomoPrompt}}</span>
+    <div id="prompt-container">
+      <md-text-float label="I want to..." ng-model="task.description"></md-text-float>
+    </div>
   </div>
 </div>

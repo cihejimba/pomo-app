@@ -1,16 +1,21 @@
 #pomo-timer-template {
   width: 100%;
-  height: 100%;
-}
-#pomo-timer {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 300px;
-  height: 300px;
-  margin: auto;
-  #progress-indicator {
-    height: 100%;
-    width: 100%;
+  position: absolute;
+  top: 96px;
+  bottom: 0px;
+}
+#pomo-timer {
+  circle {
+    stroke-linecap: round; 
+    transition: stroke-dashoffset 0.1s linear;
   }
+}
+#prompt-container {
+  width: 225px;
+  height: 225px;
+  background-color: $primary;
+  border-radius: 100%;
 }
